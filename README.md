@@ -93,37 +93,3 @@ cluster
 rpart
 
 psych
-
-Project Structure
-customer-segmentation-and-loyalty-modelling-r/
-│
-├── customer_segmentation_loyalty_modelling.R
-├── turtle_reviews.csv  (if included)
-└── README.md
-Skills Demonstrated
-
-End-to-end analytical workflow
-
-Customer segmentation strategy
-
-Feature engineering and transformation
-
-Model comparison and refinement
-
-Diagnostic evaluation of regression assumptions
-
-Translation of statistical modelling into business insight
-
-Positioning
-
-This project demonstrates applied modelling capability beyond basic coursework, combining:
-
-Unsupervised learning
-
-Supervised learning
-
-Statistical reasoning
-
-Business interpretation
-
-It reflects a practical data science approach suitable for junior data scientist and AI data roles.# Customer-Segmentation-and-Loyalty-Modeling
