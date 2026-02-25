@@ -15,6 +15,11 @@ This project demonstrates a **full end-to-end data science workflow**, from expl
 
 ---
 
+## Example output
+![Segment Heatmap](Customer_Segment_Value_Overlay.png)
+
+---
+
 ## Dataset
 
 The dataset contains customer-level information including:
