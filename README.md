@@ -1,95 +1,125 @@
-Customer Segmentation and Loyalty Modelling (R)
+Customer Segmentation and Loyalty Modelling
 Overview
 
-This project applies both unsupervised and supervised learning techniques to analyse customer behaviour and loyalty programme performance.
+This project applies unsupervised and supervised machine learning techniques to analyse customer behaviour and model loyalty programme performance.
 
-The analysis identifies meaningful customer segments and builds predictive models to understand the drivers of loyalty points earned.
+The objectives were:
 
-The objective is to translate behavioural data into actionable insights that could support marketing strategy and customer retention initiatives.
+Identify meaningful customer segments
 
-Business Context
+Understand the drivers of loyalty points earned
 
-Customer behaviour is rarely homogeneous. Identifying high-value segments and understanding the drivers of loyalty can help organisations:
+Build predictive models for loyalty behaviour
 
-Optimise targeting strategies
+Translate behavioural data into actionable insights
 
-Personalise promotions
+This project demonstrates a full end-to-end data science workflow, from exploratory analysis and feature engineering through to modelling and interpretation.
 
-Improve customer retention
+Dataset
 
-Allocate marketing resources more effectively
+The dataset contains customer-level information including:
 
-This project demonstrates how clustering and regression modelling can be combined to generate both segmentation insight and predictive capability.
+Salary
 
-Methods & Techniques
-Unsupervised Learning (Segmentation)
+Spending Score
+
+Age
+
+Gender
+
+Education
+
+Loyalty Points
+
+The target variable is:
+
+Loyalty Points
+
+Techniques Used
+Unsupervised Learning
 
 K-Means Clustering
 
-Hierarchical Clustering (Ward’s method)
+DBSCAN
 
-Cluster visualisation and interpretation
+Hierarchical Clustering
 
-Decision Tree modelling to extract interpretable cluster assignment rules
+Customer Segmentation
 
-Supervised Learning (Prediction)
+Supervised Learning
+
+Decision Tree Classification
 
 Multiple Linear Regression
 
-Interaction Effects (Salary × Spending Score)
+Polynomial Regression
 
-Polynomial Terms
+Interaction Models
 
-Log transformation to address heteroscedasticity
+Log Transformation
 
-Residual diagnostics and model evaluation
+Statistical Analysis
 
-Statistical Diagnostics
+Residual diagnostics
 
-Distribution analysis
+Normality testing
 
-Shapiro-Wilk normality testing
+Skewness and kurtosis analysis
 
-Skewness and kurtosis evaluation
+Variance stabilisation
 
-Residual analysis
+Project Structure
+customer-segmentation-loyalty-model/
+│
+├── customer_segmentation.R
+├── turtle_reviews.csv
+├── README.md
+Exploratory Analysis
 
-Key Findings
+Initial analysis identified strong relationships between:
 
-Distinct behavioural clusters emerge based on salary and spending score.
+Salary and Loyalty Points
 
-Cluster boundaries can be interpreted using decision tree rules.
+Spending Score and Loyalty Points
 
-Interaction effects between salary and spending score significantly improve predictive performance.
+Exploration showed that segmentation improved model interpretability, suggesting customer groups behave differently.
 
-Log transformation stabilises variance and improves model diagnostics.
+Customer Segmentation
 
-Segment-level analysis reveals clear differences in average loyalty performance across groups.
+Several clustering approaches were evaluated:
 
-Visual Outputs
+K-Means clustering
 
-The project includes:
+DBSCAN clustering
 
-Cluster visualisations
+Hierarchical clustering
 
-Decision tree diagram for rule extraction
+Hierarchical clustering produced the most interpretable customer groups.
 
-Predicted vs. actual comparison plots
+Segmentation was primarily driven by:
 
-Segment-level loyalty comparison charts
+Salary
 
-Distribution diagnostics
+Spending Score
 
-Tools & Libraries
+Custom Segmentation Model
 
-R
+Customers were divided into interpretable segments based on salary and spending score ranges.
 
-tidyverse
+Each segment was analysed to determine average loyalty performance.
 
-ggplot2
+This segmentation approach produced clear behavioural differences between customer groups.
 
-cluster
+Segment Value Heatmap
 
-rpart
+This visualisation combines:
 
-psych
+Customer density (scatter plot)
+
+Segment boundaries
+
+Average loyalty value per segment
+
+This allows easy identification of high-value customer segments.
+
+Example Output
