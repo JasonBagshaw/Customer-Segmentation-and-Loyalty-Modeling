@@ -110,7 +110,7 @@ This allows easy identification of **high-value customer segments**.
 
 ### Example Output
 
-![Segment Heatmap](segment_heatmap.png)
+![Segment Heatmap](Customer Segment Value Overlay.png)
 
 ---
 
